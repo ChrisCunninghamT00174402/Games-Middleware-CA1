@@ -16,7 +16,7 @@ public class FindObjectTest {
     public void VerifySceneContents()
     {
         EditorSceneManager.OpenScene("Assets/Middleare", OpenSceneMode.Single);
-        var go = GameObject.Find("cube");
+        var go = GameObject.FindGameObjectWithTag("Dev");
         Assert.IsNotNull(go, "No cube object found in scene");
 
     }

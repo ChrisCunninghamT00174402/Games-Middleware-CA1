@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Wall 2
   - Score
+  - Dev
   layers:
   - Default
   - TransparentFX
