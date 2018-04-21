@@ -4,6 +4,7 @@ using UnityEngine.TestTools;
 using NUnit.Framework;
 using System.Collections;
 using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class FindObjectTest {
 
@@ -15,9 +16,9 @@ public class FindObjectTest {
     [Test]
     public void VerifySceneContents()
     {
-        EditorSceneManager.OpenScene("Assets/Middleare", OpenSceneMode.Single);
+        EditorSceneManager.OpenScene("Assets/Middleare.unity");
         var go = GameObject.FindGameObjectWithTag("Dev");
-        Assert.IsNotNull(go, "No cube object found in scene");
+        Assert.IsNotNull(go, "No object found in scene");
 
     }
 
