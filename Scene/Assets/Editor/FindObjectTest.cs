@@ -35,9 +35,17 @@ public class FindObjectTest {
     [Test]
     public void ArrayListTest()
     {
-
+        
         var array = new int[1];
         Assert.Catch(typeof(IndexOutOfRangeException), () => array[2] = 10);
+
+    }
+
+    [Test]
+    public void newTest()
+    {
+
+
 
     }
 }

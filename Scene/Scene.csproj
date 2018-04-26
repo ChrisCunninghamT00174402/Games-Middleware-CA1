@@ -82,6 +82,7 @@
     <Compile Include="Assets\CodedSphere.cs" />
     <Compile Include="Assets\MoveBall.cs" />
     <Compile Include="Assets\MoveCamera.cs" />
+    <Compile Include="Assets\NewTestScript.cs" />
     <Compile Include="Assets\Pockets.cs" />
     <Compile Include="Assets\StartTopBoard.cs" />
     <Compile Include="Assets\Timer.cs" />
