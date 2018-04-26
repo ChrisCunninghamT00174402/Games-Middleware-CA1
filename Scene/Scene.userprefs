@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Scene.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CodedSphere.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Editor\FindObjectTest.cs">
     <Files>
       <File FileName="Assets\CodedSphere.cs" Line="1" Column="1" />
+      <File FileName="Assets\Editor\FindObjectTest.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

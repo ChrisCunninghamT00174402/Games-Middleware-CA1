@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour {
         if (timeLeft <= 0)
         {
 
-            UnityEditor.EditorApplication.isPlaying = false;
+            //UnityEditor.EditorApplication.isPlaying = false;
             
         }
      
