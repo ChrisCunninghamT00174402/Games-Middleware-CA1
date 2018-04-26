@@ -5,12 +5,13 @@ using NUnit.Framework;
 using System.Collections;
 using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
+using System;
 
 public class FindObjectTest {
 
 	[Test]
 	public void FindObjectTestSimplePasses() {
-		// Use the Assert class to test conditions.
+		
 	}
 
     [Test]
@@ -30,4 +31,13 @@ public class FindObjectTest {
 		// yield to skip a frame
 		yield return null;
 	}
+
+    [Test]
+    public void ArrayListTest()
+    {
+
+        var array = new int[1];
+        Assert.Catch(typeof(IndexOutOfRangeException), () => array[2] = 10);
+
+    }
 }
