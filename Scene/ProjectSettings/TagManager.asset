@@ -10,6 +10,9 @@ TagManager:
   - Wall 2
   - Score
   - Dev
+  - CueBall
+  - cam
+  - Cam
   layers:
   - Default
   - TransparentFX

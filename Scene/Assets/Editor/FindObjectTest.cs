@@ -10,12 +10,16 @@ using System;
 public class FindObjectTest {
 
 	[Test]
-	public void FindObjectTestSimplePasses() {
-		
-	}
+	public void VerifyCamera()
+    {
+       EditorSceneManager.OpenScene("Assets/Middleare.unity");
+        var go = GameObject.FindGameObjectWithTag("Cam");
+        Assert.IsNotNull(go, "No object found in scene");
+
+    }
 
     [Test]
-    public void VerifySceneContents()
+    public void VerifyTableContents()
     {
         EditorSceneManager.OpenScene("Assets/Middleare.unity");
         var go = GameObject.FindGameObjectWithTag("Dev");
@@ -23,9 +27,18 @@ public class FindObjectTest {
 
     }
 
-	// A UnityTest behaves like a coroutine in PlayMode
-	// and allows you to yield null to skip a frame in EditMode
-	[UnityTest]
+    [Test]
+    public void VerifyCueBallContents()
+    {
+        EditorSceneManager.OpenScene("Assets/Middleare.unity");
+        var go = GameObject.FindGameObjectWithTag("CueBall");
+        Assert.IsNotNull(go, "No object found in scene");
+
+    }
+
+    // A UnityTest behaves like a coroutine in PlayMode
+    // and allows you to yield null to skip a frame in EditMode
+    [UnityTest]
 	public IEnumerator FindObjectTestWithEnumeratorPasses() {
 		// Use the Assert class to test conditions.
 		// yield to skip a frame
@@ -41,11 +54,4 @@ public class FindObjectTest {
 
     }
 
-    [Test]
-    public void newTest()
-    {
-
-
-
-    }
 }
